@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//숫자 게임 직접 풀어보기
+//숫자 게임
 public class Solution4 {
     public int solution(int[] A, int[] B) {
         int answer = -1;
@@ -46,23 +46,23 @@ public class Solution4 {
 
 
         // 내가 푼 방법>
-        Arrays.sort(A);
-        Arrays.sort(B);
-
-        List<Integer> Blist =
-                Arrays.stream(B)
-                        .boxed()
-                        .collect(Collectors.toList());
-
-        for(int Aitem : A){
-            for(int i = 0; i<Blist.size(); i++){
-                if(Aitem < Blist.get(i)){
-                    answer++;
-                    Blist.remove(i);
-                    break;
-                }
-            }
-        }
+//        Arrays.sort(A);
+//        Arrays.sort(B);
+//
+//        List<Integer> Blist =
+//                Arrays.stream(B)
+//                        .boxed()
+//                        .collect(Collectors.toList());
+//
+//        for(int Aitem : A){
+//            for(int i = 0; i<Blist.size(); i++){
+//                if(Aitem < Blist.get(i)){
+//                    answer++;
+//                    Blist.remove(i);
+//                    break;
+//                }
+//            }
+//        }
 
         return answer;
     }

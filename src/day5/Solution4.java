@@ -52,9 +52,9 @@ public class Solution4 {
         dfs(open, close+1, n);
 
 //        open = 0, close=0 ==> dfs 호출
-//        open=1, close=0, 2==> 1,0
-//
-//
+//        open=1, close=0, 2==> 1,0 //open=0, close=1, 0, 1 1번 (1쌍)
+//        open=2, close=1, n==> 2,1 //open=1, close=2, 2 ==> 2,1
+//        open=2, close=2 ==> 2,2   //open=2, close=2 ==> (2,2) 1쌍
     }
 
 }

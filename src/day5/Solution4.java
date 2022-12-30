@@ -19,7 +19,7 @@ public class Solution4 {
 
         //1> 스택이용
         int answer = 0;
-        Stack<P> stack = new Stack<>();
+        Stack<P> stack = new Stack<>(); //Queue도 가능
         stack.push(new P(0,0));
         while(!stack.isEmpty()){
             P p = stack.pop();

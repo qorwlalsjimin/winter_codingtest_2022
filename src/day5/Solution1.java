@@ -33,7 +33,7 @@ public class Solution1 {
         //3> 전화번호의 값이 map에 존재하는지 확인
         for(String phone : phone_book) {
             for (int i = 0; i < phone.length(); i++){
-                if(map.get( phone.substring(0,i) )==Integer.valueOf(1))
+                if(map.containsKey(phone.substring(0,i)))
                     return false;
             }
         }
